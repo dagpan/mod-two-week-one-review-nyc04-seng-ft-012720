@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     post '/seas', to: "seas#create"
     get '/seas/:id/edit', to: "seas#edit", as: 'edit'
     patch '/seas/:id', to: "seas#update"
-    delete '/seas/:id', to: "seas#delete"
+    delete '/seas/:id', to: "seas#destroy"
     # match '/seas/:id', to: "seas#show", via: [:get, :patch]
     # resources :seas, only: [:index, :show, :new, :create, :edit, :update]
 

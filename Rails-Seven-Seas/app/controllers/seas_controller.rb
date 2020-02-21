@@ -19,10 +19,10 @@ class SeasController < ApplicationController
     @sea.save
     redirect_to action: 'show', id: @sea.id
   end
-  def delete
+  def destroy
     @sea = Sea.find(params[:id])
     @sea.destroy
-    redirect to "/seas"
+    redirect_to action: 'index'
   end
   def update
     @sea = Sea.find(params[:id])
